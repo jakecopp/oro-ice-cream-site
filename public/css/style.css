@@ -1,5 +1,9 @@
-body,h1,h2,h3,h4,h5,h6 {
-    font-family: "Times", "Times New Roman", serif;
+body {
+    font-family: "Rubik", sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: "Rubik", sans-serif;
 }
 
 img {
@@ -8,7 +12,7 @@ img {
 }
 
 .w3-bar,h1,button {
-    font-family: "Times", "Times New Roman", serif;
+    font-family: "Rubik", sans-serif;
 }
 
 .fa-anchor,.fa-coffee {
@@ -55,6 +59,33 @@ a.no-hover:hover {
 
 .w3-gold,.w3-hover-gold:hover{color:#fff!important;background-color:#efc700!important}
 
+/*****************************************/
+/*                                       */
+/*****************************************/
+
+.parallax {
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.topnav-centered {
+    float: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.background-video {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+}
+
 .contact-info {
     text-align: left;
 }
@@ -68,8 +99,8 @@ a.no-hover:hover {
 }
 
 /* For devices larger than 600px: */
-header {
-    background-image: url('../images/strawberry-scoop-full.jpg');
+header.home-banner {
+    /*background-image: url('../images/strawberry-scoop-full.jpg');*/
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -78,7 +109,11 @@ header {
   
 /* For devices 600px and smaller: */
 @media only screen and (max-width: 600px) {
-    header {
+    header.home-banner {
         background-image: url('../images/strawberry-scoop-small.jpeg');
+    }
+
+    .background-video {
+        display: none;
     }
 }
