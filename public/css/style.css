@@ -1,5 +1,6 @@
 body {
     font-family: "Rubik", sans-serif;
+    overflow-x: hidden;
 }
 
 h1,h2,h3,h4,h5,h6 {
@@ -65,9 +66,19 @@ a.no-hover:hover {
 /*                                       */
 /*****************************************/
 
+.top-bar {
+    margin: 0px auto;
+    text-align: center;
+}
+
 .parallax {
     background-attachment: fixed;
     background-position: center;
+}
+
+.shadowed {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
 }
 
 .fly-up {
@@ -109,14 +120,6 @@ a.no-hover:hover {
     text-align: left;
 }
 
-.banner {
-    height:150px;
-}
-
-
-.banner img {
-    max-height:150px;
-}
 
 /* For devices larger than 600px: */
 header.home-banner {
