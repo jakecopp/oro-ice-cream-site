@@ -11,6 +11,7 @@
 
         <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Times">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -21,15 +22,15 @@
     <body class="oro-brand-blue">
         <!-- Navbar -->
         <div class="top-bar" id="topBar">
-            <div class="w3-bar oro-brand-gold w3-card w3-large">
+            <div class="w3-bar oro-brand-blue w3-card w3-large oro-text-brand-gold">
                 <div class="w3-row">
-                    <div class="w3-col s3">
-                        <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-left">ORO ICE CREAM</a>
+                    <div class="w3-col l3">
+                        <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-left ">ORO ICE CREAM</a>
                         <a href="#" class="w3-bar-item w3-button w3-hide-large w3-hide-medium w3-padding-large no-hover">ORO ICE CREAM</a>
                     </div>
                     <div class="col w3-center">
-                        <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-large oro-brand-gold w3-hover-gold" href="javascript:void(0);" onclick="oro.toggleMobileNavMenu()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
-                        <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-white w3-hover-gold">Home</a>
+                        <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-large w3-hover-blue" href="javascript:void(0);" onclick="oro.toggleMobileNavMenu()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+                        <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large selected w3-hover-gold">Home</a>
                         <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-gold">About</a>
                         <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-gold">Menu</a>
                         <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-gold">Visit</a>
@@ -58,67 +59,90 @@
             <video id="background-video" class="background-video w3-greyscale" autoplay loop muted>
                 <source src="./res/video/placeholder-video.mp4" type="video/mp4">
             </video>
-            <div class="w3-content w3-padding w3-round-large">
+            <div class="w3-content w3-padding w3-round-large" style="background-image: url(./images/gold-paint.png); background-repeat: no-repeat; background-position: center;">
                 <h1 class="w3-margin w3-jumbo w3-text-black">Oro</h1>
                 <p class="w3-xlarge w3-text-black">It's like gold. In your mouth</p>
                 <button class="w3-button w3-black w3-padding-large w3-large w3-margin-top oro-text-brand-gold">Get Started</button>
             </div>
+
             
         </header>
-
+    
         <!-- First Grid -->
-        <div class="w3-row-padding w3-padding-64 w3-container w3-black">
+        <div class="w3-row-padding w3-padding-64 w3-container oro-dark-blue">
             <div class="w3-content">
-                <div class="w3-container w3-light-gray w3-round-xlarge">
-                    <div class="w3-twothird">
-                    <h1>Our Mission</h1>
-                    <h5 class="w3-padding-32">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h5>
-
-                    <p class="w3-text-black">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint
-                        occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                        laboris nisi ut aliquip ex ea commodo consequat.</p>
-                    </div>
-
-                    <div class="w3-third w3-padding w3-center">
-                        <img src="./images/placeholder.jpg" class="w3-round-large w3-border-black shadowed" alt="Sample image">
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Second Grid -->
-        <div class="w3-row-padding w3-light-grey w3-padding-64 w3-container" id="visit">
-            <div class="w3-content">
-                <div class="w3-third w3-padding w3-center">
-                    <img src="./images/placeholder-truck.jp2" class="w3-round-large" alt="Sample image">
-                </div>
-
                 <div class="w3-twothird">
-                <h1>Come Visit Us!</h1>
+                <h1>Our Mission</h1>
                 <h5 class="w3-padding-32">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h5>
 
-                
-            </div>
-            <p class="w3-text-grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint
-                occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                laboris nisi ut aliquip ex ea commodo consequat.</p>
-            </div>
-        </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint
+                    occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                    laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
 
-        <div class="w3-container">
-            <div class="w3-content w3-center">
+                <div class="w3-third w3-padding w3-center">
+                    <img src="./images/placeholder.jpg" class="w3-round-large w3-border-black shadowed" alt="Sample image">
+                </div>
+            </div>
+            
+        </div>
+        <div class="wave">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill-dark-blue"></path>
+            </svg>
+        </div>
+        
+        
+
+        <!-- Second Grid -->
+        <section>
+            <div class="w3-row-padding w3-light-grey w3-padding-64 w3-container oro-light-blue" id="visit">
+                <div class="w3-content">
+                    <div class="w3-third w3-padding w3-center">
+                        <img src="./images/placeholder-truck.jp2" class="w3-round-large" alt="Sample image">
+                    </div>
+
+                    <div class="w3-twothird">
+                    <h1>Come Visit Us!</h1>
+                    <h5 class="w3-padding-32">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h5>
+
+                    
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint
+                    occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                    laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+            </div>
+            <div class="wave">
+                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                    <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill-light-blue"></path>
+                </svg>
+            </div>
+        </section>
+
+        <div class="w3-container oro-dark-blue">
+            
                 <img class="slides" src="./images/placeholder-truck.jp2" height="100%">
                 <img class="slides" src="./images/placeholder.jpg" width="25%">
                 <img class="slides" src="./images/logo-black-small.jpeg" height="100%">
-            </div>
+                <div class="wave flipped">
+                    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                        <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill-light-blue"></path>
+                    </svg>
+                </div>
+            
+           
         </div>
 
-        <div class="w3-container w3-black w3-center w3-padding-64 oro-text-brand-gold">
+        <div class="w3-container w3-black w3-center w3-padding-64 oro-light-blue">
             <h1 class="w3-margin w3-xlarge">It's like gold. In your mouth.</h1>
+            
         </div>
+        
+       
 
         <!-- Footer -->
-        <footer class="w3-container w3-padding-64 w3-opacity">  
+        <footer class="w3-container w3-padding-64 w3-opacity oro-brand-blue">  
             <div class="w3-row-padding w3-container">
                 <div class="w3-containter w3-col m2">
                     <h6><strong>Links</strong></h6>
@@ -160,7 +184,7 @@
         </footer>
         <script src="./scripts/oro.js"></script>
         <script>        
-            w3.slideshow(".slides", 3000);
+            /*w3.slideshow(".slides", 3000);*/
         </script>
 
     </body>

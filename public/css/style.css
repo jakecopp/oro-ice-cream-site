@@ -1,10 +1,12 @@
 body {
-    font-family: "Rubik", sans-serif;
+    font-family: "Josefin Sans", sans-serif;
     overflow-x: hidden;
+    width: 100vw;
 }
 
 h1,h2,h3,h4,h5,h6 {
-    font-family: "Rubik", sans-serif;
+    font-family: "Times", serif;
+    color: white;
 }
 
 img {
@@ -12,8 +14,9 @@ img {
     max-height: 100%;
 }
 
-.w3-bar,h1,button {
-    font-family: "Rubik", sans-serif;
+.w3-bar, button {
+    font-family: "Times", serif;
+    color: #fede65;
 }
 
 .fa-anchor,.fa-coffee {
@@ -49,9 +52,14 @@ a.no-hover:hover {
     color:#5183e2!important
 }
 
-.oro-brand-light-blue, .oro-hover-brand-light-blue:hover {
-    color:#fff!important;
-    background-color:#d1e3ff!important
+.oro-light-blue, .oro-hover-light-blue:hover {
+    color:#20345a!important;
+    background-color:#85b3ea!important
+}
+
+.oro-dark-blue, .oro-hover-dark-blue:hover {
+    color:#fede65!important;
+    background-color:#456ab1!important
 }
 
 .oro-text-brand-gold,.oro-hover-text-brand-gold:hover{
@@ -65,6 +73,50 @@ a.no-hover:hover {
 /*****************************************/
 /*                                       */
 /*****************************************/
+
+.wave {
+    position: absolute;
+    left: 0;
+    width: 100vw;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.wave svg {
+    position: relative;
+    display: block;
+    width: calc(150% + 1.3px);
+    height: 90px;
+}
+
+.wave .shape-fill-dark-blue {
+    fill: #456AB1;
+}    
+.wave .shape-fill-light-blue {
+    fill: #85b3ea;
+}    
+
+.flipped {
+    transform: rotate(180deg);
+    bottom: 0;
+    position: relative;
+}
+
+.flippedY {transform: rotateY(180deg);}
+
+
+
+.josefin-sans {
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+}
+
+.selected {
+    /*text-decoration: underline;*/
+    background-color: #456ab1;
+}
 
 .top-bar {
     margin: 0px auto;
