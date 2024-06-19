@@ -3,10 +3,12 @@
 var oro = {};
         
 var topBar = document.getElementById("topBar");
+var afterTop = document.getElementById("afterTop");
 var sticky = topBar.offsetTop;
-var topPad = 128
-var padingHeight = document.getElementById('topBar').offsetHeight + topPad + "px"
-var after = document.getElementById("afterTop");
+
+var topPad = parseInt(afterTop.style.paddingTop);
+
+var padingHeight = topBar.offsetHeight + topPad + "px";
 
 oro.toggleMobileNavMenu = function () {
     var x = document.getElementById("mobileNav");
@@ -24,10 +26,10 @@ oro.setPaddingHeight = function () {
 oro.toggleTopBar = function () {
     if (window.pageYOffset > sticky) {
         topBar.classList.add("w3-top");
-        after.style.paddingTop = padingHeight;
+        afterTop.style.paddingTop = padingHeight;
     } else {
         topBar.classList.remove("w3-top");
-        after.style.paddingTop = topPad + "px";
+        afterTop.style.paddingTop = topPad + "px";
     }
 }
 
