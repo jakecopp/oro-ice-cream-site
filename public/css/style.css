@@ -270,7 +270,12 @@ footer {
     left: 0;
     top: 0;
     z-index: -1;
+
+    filter:grayscale(75%);
+    /*filter:saturate(175%);*/
 }
+
+.background-video  {animation:fading 8s} @keyframes fading{0%{opacity:0}20%{opacity:1}80%{opacity:1}100%{opacity:0}}
 
 .contact-info {
     text-align: left;
@@ -284,13 +289,14 @@ header.home-banner {
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    padding-right: 156px;
+    padding-right: 5%;
 
 }
 
 header.home-banner div {
     float: right;
     background-repeat: no-repeat; background-position: center; background-size: 100% auto;
+    width: 500px; height: 400px;
 }
   
 /* For devices 600px and smaller: */
@@ -307,6 +313,8 @@ header.home-banner div {
     header.home-banner div {
         float: none;
         background-size: auto 100%;
+        width: auto; height: auto;
+
     }
 }
 
