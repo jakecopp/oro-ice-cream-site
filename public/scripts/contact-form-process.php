@@ -3,11 +3,11 @@
 
         // EDIT THE 2 LINES BELOW AS REQUIRED
         $email_to = "jcopp007@gmail.com";
-        $email_subject = "New form submissions";
+        $email_subject = "New Contact Form Submission";
 
         function problem($error)
         {
-            echo "We are very sorry, but there were error(s) found with the form you submitted. ";
+            echo "We're sorry, but there were error(s) found with the form you submitted. ";
             echo "These errors appear below.<br><br>";
             echo $error . "<br><br>";
             echo "Please go back and fix these errors.<br><br>";
@@ -72,7 +72,7 @@
 
     <!-- include your success message below -->
 
-    Thank you for contacting us. We will be in touch with you very soon.
+    Thank you for contacting us. We will be in touch with you soon.
 
 <?php
 }

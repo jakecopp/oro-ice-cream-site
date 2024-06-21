@@ -100,6 +100,24 @@ footer {
 /*                                       */
 /*****************************************/
 
+.pop-up {
+    transition: transform .5s, box-shadow .5s, border-right .5s, border-bottom .5s;
+    gap: 10px;
+}
+
+.pop-up:hover {
+    transform: translate(-10px, -10px);
+    /*box-shadow: 10px 10px 0 0 rgb(0 0 0 / .5);*/
+    border-right: #000 10px solid;
+    border-bottom: #000 10px solid;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+
+
+
+}
+
 .faq-block i {
     transition: transform .4s;
 }
