@@ -100,21 +100,19 @@ footer {
 /*                                       */
 /*****************************************/
 
-.pop-up {
-    transition: transform .5s, box-shadow .5s, border-right .5s, border-bottom .5s;
-    gap: 10px;
+.pop-button {
+    transition: transform .5s, box-shadow .5s, color .5s;
 }
 
-.pop-up:hover {
-    transform: translate(-10px, -10px);
-    /*box-shadow: 10px 10px 0 0 rgb(0 0 0 / .5);*/
-    border-right: #000 10px solid;
-    border-bottom: #000 10px solid;
-    border-top-right-radius: 10px;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
+.pop-button:hover {
+    transform: translate(-6px, -6px);
+    box-shadow: 6px 6px 0 0 rgb(0 0 0 / .5);
+}
 
-
+.pop-button:active {
+    transition: transform 0ms linear, box-shadow 0ms linear;
+    transform: translate(-3px, -3px);
+    box-shadow: 3px 3px 0 0 rgb(0 0 0 / 1);
 
 }
 
@@ -217,8 +215,10 @@ footer {
     margin: 0px auto;
     text-align: center;
     background-image: linear-gradient(#5183e2, #456ab1);
+}
+
+.top-bar .w3-card {
     border-bottom: 8px #fede65 solid;
-   
 
 }
 
