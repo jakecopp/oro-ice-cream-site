@@ -18,14 +18,24 @@ h2,h3,h4,h5,h6 {
 }
 
 h1 {
-    font-family: "Times", serif;
+    font-family: "Pacifico", cursive;
     color: white;
     filter: drop-shadow(5px 5px 10px rgb(0 0 0 / .5));
+    /*text-shadow:
+       2px 2px 0 #fede65,
+     -1px -1px 0 #fede65,  
+      1px -1px 0 #fede65,
+      -1px 1px 0 #fede65,
+      2px 9px 0 #000; */
+}
+
+div:has(+footer) h1 {
+    font-family: "Times", serif;
 }
 
 img {
     max-width: 100%;
-    max-height: 100%;
+    max-height: auto;
 }
 
 .w3-bar, button {
@@ -62,6 +72,11 @@ a.no-hover:hover {
 footer {
     background-image: linear-gradient(#5183e2, #456ab1);
     border-top: 8px #fede65 solid;
+}
+
+header {
+    background: rgb(254,222,101);
+    background: radial-gradient(circle, rgba(254,222,101,1) 3%, rgba(223,190,68,1) 86%, rgba(168,112,34,1) 100%);
 }
 
 iframe {
@@ -226,11 +241,11 @@ iframe {
     margin: 0px auto;
     text-align: center;
     background-image: linear-gradient(#5183e2, #456ab1);
+    
 }
 
 .top-bar .w3-card {
     border-bottom: 8px #fede65 solid;
-
 }
 
 .oro-top {
@@ -273,20 +288,24 @@ iframe {
     transform: translate(-50%, -50%);
 }
 
+
 .background-video {
     width: 100%;
-    object-fit: cover;
+    height: 659px;
+    object-fit:cover;
+
+
     position: absolute;
     left: 0;
     top: 0;
     z-index: -1;
-
-    filter:grayscale(50%);
-    /*filter:saturate(175%);
-    animation:fading 8s*/
+    /*filter:saturate(125%);*/
+    animation: kenburns 8s linear; 
 }
 
-@keyframes fading{0%{opacity:0}20%{opacity:1}80%{opacity:1}100%{opacity:0}}
+@keyframes fade{0%{filter: grayscale(50%)}25%{filter: grayscale(0%);}75%{filter: grayscale(0%)}100%{filter: grayscale(50%)}}
+
+@keyframes kenburns{100%{transform: scale(1.05, 1.05) translate(-.5%, -.5%);}}
 
 .contact-info {
     text-align: left;
@@ -295,13 +314,7 @@ iframe {
 
 /* For devices larger than 600px: */
 header.home-banner {
-    /*background-image: url('../images/strawberry-scoop-full.jpg');*/
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    padding-right: 5%;
-
+    background: none;
 }
 
 header.home-banner div {
@@ -316,7 +329,12 @@ header.home-banner div {
 
 @media only screen and (max-width: 600px) {
     header.home-banner {
-        background-image: url('../images/strawberry-scoop-small.jpeg');
+        background-image: url('../images/truck-wrap-vertical.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+
         padding-right: 16px;
     }
 
