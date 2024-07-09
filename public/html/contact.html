@@ -23,25 +23,33 @@
     </head>
     <body class="oro-brand-blue">
         <!-- Navbar -->
-        <div class="top-bar w3-opcity" id="topBar">
-            <div class="w3-bar w3-card w3-large oro-text-brand-gold">
+        <div class="top-bar w3-card" id="topBar">
+            <div class="oro-bar w3-large oro-text-brand-gold">
                 <div class="w3-row">
-                    <div class="">
-                        <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-left ">ORO ICE CREAM</a>
-                        <a href="#" class="w3-bar-item w3-button w3-hide-large w3-hide-medium w3-padding-large no-hover">ORO ICE CREAM</a>
+                    <div class="" style="position: absolute;">
+                        <a href="../index.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-left ">ORO ICE CREAM</a>
+                        <a href="../index.html" class="w3-bar-item w3-button w3-hide-large w3-hide-medium w3-padding-large no-hover">ORO ICE CREAM</a>
                     </div>
-                    <div class="w3-center" style="margin: 0 auto;">
+                    <div class="">
                         <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-large w3-hover-gold" href="javascript:void(0);" onclick="oro.toggleMobileNavMenu()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
-                        <a href="../index.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-gold">Home</a>
+                        <a href="../index.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large selected w3-hover-gold">Home</a>
                         <a href="./about.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-gold">About</a>
                         <a href="./menu.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-gold">Menu</a>
-                        <a href="./visit.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-gold">Visit</a>
-                        <a href="./contact.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-gold selected">Contact</a>
-                        <a href="./faq.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-gold">FAQ</a>
+                        <a href="./visit.html" class="w3-bar-item w3-button w3-hide-small w3-hide-medium w3-padding-large w3-hover-gold">Visit</a>
+                        <a href="./contact.html" class="w3-bar-item w3-button w3-hide-small w3-hide-medium w3-padding-large w3-hover-gold">Contact</a>
+                        <a href="./faq.html" class="w3-bar-item w3-button w3-hide-small w3-hide-medium w3-padding-large w3-hover-gold">FAQ</a>
+                        
+                        <span class="dropdown" style="float:right;">
+                            <button class="dropbtn w3-bar-item w3-button w3-hide-small w3-hide-large w3-padding-large"><i class="fa fa-chevron-down w3-right"></i></button>
+                            <div class="dropdown-content">
+                              <a href="./visit.html">Visit</a>
+                              <a href="./contact.html">Contact</a>
+                              <a href="./faq.html">FAQ</a>
+                            </div>
+                        </span>
                     </div>
                     
-                    
-                </div>
+                </div>    
                 
             </div>
 
