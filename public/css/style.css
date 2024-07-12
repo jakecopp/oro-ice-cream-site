@@ -10,6 +10,7 @@ body {
     font-family: "Josefin Sans", sans-serif;
     overflow-x: hidden;
     width: 100%;
+    font-size:18px
 }
 
 h2,h3,h4,h5,h6 {
@@ -125,6 +126,18 @@ iframe {
 /*****************************************/
 /*                                       */
 /*****************************************/
+
+.raised-box {
+    padding: 64px;
+    background-color: rgba(211, 211, 211, 0.8);
+    box-shadow: 12px 12px 0 0 rgb(0 0 0 / 1);
+    transition: transform .5s, box-shadow .5s, color .5s;
+}
+/*.raised-box:hover {
+    transform: translate(-6px, -6px);
+    box-shadow: 18px 18px 0 0 rgb(0 0 0 / .5);
+
+}*/
 
 .pop-button {
     transition: transform .5s, box-shadow .5s, color .5s;
@@ -356,6 +369,10 @@ header.home-banner div {
     }
 
     .oro-bar .w3-bar-item{float:left; display:block;}
+
+    .raised-box {
+        box-shadow: 6px 6px 0 0 rgb(0 0 0 / 1);
+    }
 
 }
 
