@@ -79,6 +79,12 @@ footer {
 header {
     background: rgb(254,222,101);
     background: radial-gradient(circle, rgba(254,222,101,1) 3%, rgba(223,190,68,1) 86%, rgba(168,112,34,1) 100%);
+
+    background-image: url(../images/Vanilla-wide.jpg); 
+    background-repeat: no-repeat; 
+    background-size: cover;
+    background-position: center;
+    transition: background-position 1s;
 }
 
 iframe {
@@ -143,7 +149,7 @@ iframe {
 
 .raised-box {
     padding: 64px;
-    background-color: rgba(211, 211, 211, 0.8);
+    background-color: rgba(231, 231, 231, 0.8);
     box-shadow: 12px 12px 0 0 rgb(0 0 0 / .8);
     transition: transform .5s, box-shadow .5s, color .5s;
     color:#20345a;
@@ -273,6 +279,10 @@ iframe {
     padding-right: 5%;
     background-image: linear-gradient(#5183e2, #456ab1);
     border-bottom: 8px #fede65 solid;
+}
+
+.top-bar a:hover {
+    color:#fff!important;background-color:#efc700!important;    
 }
 
 
