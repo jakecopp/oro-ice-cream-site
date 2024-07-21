@@ -85,6 +85,13 @@ header {
     background-size: cover;
     background-position: center;
     transition: background-position 1s;
+
+    padding-top: 18px!important; 
+    padding-bottom: 18px!important;
+}
+
+.w3-top+* {
+    margin-top: 59px!important;
 }
 
 iframe {
@@ -376,6 +383,11 @@ header.home-banner div {
 /************************************/
 
 @media only screen and (max-width: 600px) {
+
+    .w3-top:has(#mobileNav.w3-show) + * {
+        margin-top: 371px!important;
+    }
+
     header.home-banner {
         background-image: url('../images/truck-wrap-vertical.jpg');
         background-repeat: no-repeat;
