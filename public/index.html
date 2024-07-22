@@ -215,6 +215,15 @@
         <script src="./scripts/oro.js"></script>
         <script>        
             w3.slideshow(".slides", 8000);
+                        
+            const d = new Date();
+            let day = d.getDay();
+            console.log(day);
+            if (day == 0 || day == 6) {
+                document.getElementById("market-street-map").classList.add("w3-hide");
+            } else { 
+                document.getElementById("fox-run-map").classList.add("w3-hide");
+            }
         </script>
 
     </body>

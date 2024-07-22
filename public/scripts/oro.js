@@ -33,13 +33,5 @@ oro.accordionDrop = function (id) {
 	}
 }
 
-const d = new Date();
-let day = d.getDay();
-console.log(day);
-if (day == 0 || day == 6) {
-    document.getElementById("market-street-map").classList.add("w3-hide");
-} else { 
-    document.getElementById("fox-run-map").classList.add("w3-hide");
-}
 
 window.onscroll = function() {oro.toggleTopBar()};
