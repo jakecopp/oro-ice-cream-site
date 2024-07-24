@@ -53,7 +53,7 @@ a {
 }
 
 .w3-content p a {
-    color: #fede65;
+    color: #85b3ea;
     text-decoration: underline;
 }
 
@@ -308,7 +308,7 @@ iframe {
 
 .selected {
     /*text-decoration: underline;*/
-    background-color: #456ab1;
+    background-color: #6593ca;
 }
 
 .top-bar {
