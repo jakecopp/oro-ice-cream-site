@@ -40,7 +40,7 @@ img {
 
 .w3-bar, button {
     font-family: "Josefin Sans", sans-serif;
-    color: #fede65;
+    color: #fede65!important;
 }
 
 .fa-anchor,.fa-coffee {
@@ -53,7 +53,7 @@ a {
 }
 
 .w3-content p a {
-    color: #85b3ea;
+    color: #5183e2;
     text-decoration: underline;
 }
 
@@ -106,6 +106,10 @@ iframe {
     margin-bottom: 32px;
 
 }
+/* 
+header+div {
+    border-top: 8px #fede65 solid;
+} */
 
 /*****************************************/     
 /*            Brand Colors               */
@@ -131,8 +135,8 @@ iframe {
 }
 
 .oro-dark-blue, .oro-hover-dark-blue:hover {
-    color:#20345a!important;
-    background-color:#fffefd!important
+    color:#40547a!important;
+    background-color:#fffdfc!important
 }
 
 .oro-dark-blue h1 {
@@ -183,7 +187,7 @@ iframe {
     box-shadow: 12px 12px 0 0 rgb(0 0 0 / .5);
     transition: transform .5s, box-shadow .5s, color .5s;
     color:#20345a!important;
-    border: 3px solid rgba(211, 211, 211, 0.9);
+    border: 2px solid rgba(251, 251, 251, 0.9);
     border-radius: 4px;
     margin-bottom: 48px;
 }
@@ -282,7 +286,7 @@ iframe {
 }
 
 .wave .shape-fill-dark-blue {
-    fill: #fffefd;
+    fill: #fffdfc;
 }    
 .wave .shape-fill-light-blue {
     fill: #85b3ea;
@@ -313,9 +317,10 @@ iframe {
 
 .top-bar {
     width: 100%;
+    color: #fede65;
     text-align: right;
     padding-right: 5%;
-    background-color: #85b3ea;
+    background-color: #85b3ea;  /* maybe coule be 5183e2 ? */
     /* background-image: linear-gradient(#5183e2, #456ab1); */
     border-bottom: 8px #fede65 solid;
 }
