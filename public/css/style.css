@@ -456,13 +456,14 @@ header.home-banner div {
     .oro-bar .w3-bar-item{float:left; display:block;}
 
     .raised-box {
-        box-shadow: 6px 6px 0 0 rgb(0 0 0 / .8);
+        box-shadow: 6px 6px 0 0 rgb(0 0 0 / .5);
         padding: 48px;
+        margin-bottom: 0;
     }
 
     .raised-box:hover {
         transform: none;
-        box-shadow: 6px 6px 0 0 rgb(0 0 0 / .8);
+        box-shadow: 6px 6px 0 0 rgb(0 0 0 / .5);
     
     }
     
